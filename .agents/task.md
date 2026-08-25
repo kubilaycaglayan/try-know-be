@@ -142,4 +142,5 @@
 - [x] Paths persist a user-selected color from a twelve-color palette
 - [x] Recent dashboard sessions show their path and shortened description
 - [x] User path, item, note, and time-history list queries use bounded pages
+- [x] Frontend development hot reload is reachable on a documented SSH-forwardable port
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
