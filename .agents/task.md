@@ -148,4 +148,5 @@
 - [x] Dashboard statistics expose rolling-week time breakdowns by path and item
 - [x] Native dashboard decodes and displays rolling-week path and item statistics
 - [x] Statistics clip sessions crossing UTC reporting boundaries without double-counting
+- [x] Compose services use bounded log retention alongside health checks and restart policies
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
