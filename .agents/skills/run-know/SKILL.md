@@ -45,7 +45,7 @@ Expected output: `db` (healthy), `api` (healthy), `web` (running), `proxy` (heal
 When accessing from a remote computer:
 1. Establish SSH tunnel: `ssh -L 3000:localhost:3000 user@<host-ip>`
 2. Open in remote browser: `http://localhost:3000` or `http://127.0.0.1:3000`
-3. Caddy serves plain HTTP with `auto_https disable_redirects` on port 3000 to prevent HTTPS redirect loops.
+3. Caddy serves the localhost fallback as plain HTTP on port 3000; configured non-local domains redirect HTTP to HTTPS.
 
 ## 4. Frontend Hot-Reload Development (Alternative)
 
