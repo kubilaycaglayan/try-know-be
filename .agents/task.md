@@ -149,4 +149,5 @@
 - [x] Native dashboard decodes and displays rolling-week path and item statistics
 - [x] Statistics clip sessions crossing UTC reporting boundaries without double-counting
 - [x] Compose services use bounded log retention alongside health checks and restart policies
+- [x] Production deployment preflight validates DNS, secrets, CORS, Compose, and Caddy before startup
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
