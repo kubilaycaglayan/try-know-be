@@ -141,4 +141,5 @@
 - [x] Clockify exports can be pasted into the dashboard and imported into idempotent Know time entries
 - [x] Paths persist a user-selected color from a twelve-color palette
 - [x] Recent dashboard sessions show their path and shortened description
+- [x] User path, item, note, and time-history list queries use bounded pages
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
