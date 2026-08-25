@@ -147,4 +147,5 @@
 - [x] Native active timer controls synchronize their path, item, and editable start state from the server
 - [x] Dashboard statistics expose rolling-week time breakdowns by path and item
 - [x] Native dashboard decodes and displays rolling-week path and item statistics
+- [x] Statistics clip sessions crossing UTC reporting boundaries without double-counting
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
