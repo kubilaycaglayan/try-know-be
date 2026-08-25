@@ -113,7 +113,32 @@
 - [x] API returns a consistent 400 response for malformed route IDs and request bodies
 - [x] MockMvc API coverage includes item validation and timer source/target boundaries
 - [x] Smoke verification cleans its project containers, volumes, and local images automatically
+- [x] Smoke verification removes its temporary BuildKit builder/cache automatically
+- [x] Smoke verification requires Buildx instead of silently falling back to unscoped cache
 - [x] Native UI-test launches force a deterministic signed-out authentication screen
+- [x] Declarative iOS project configuration defines executable, unit-test, and UI-test targets
+- [x] Accessibility CI verifies the declarative native UI-test target and host application
+- [x] Native UI-test source covers authentication mode switching
+- [x] Native UI-test source reaches authenticated paths, items, and timer controls with an isolated fixture
+- [x] Native unit coverage verifies the authenticated UI-test fixture avoids network refreshes
+- [x] Native documentation identifies authenticated UI data as test-only in-memory fixtures
+- [x] Native UI-test source opens path and item creation forms and checks their save controls
+- [x] Native UI-test source reaches item note creation controls
+- [x] Web timeline component test verifies activity note creation payloads
+- [x] API tests verify configured and unconfigured CORS policy behavior
+- [x] Full-stack smoke verifies configured and unconfigured CORS preflight behavior
+- [x] Full-stack smoke uses configurable isolated proxy host ports
+- [x] Compose passes the configured production domain into the Caddy proxy
+- [x] Local convenience proxy port is restricted to loopback
+- [x] Contributor guidance documents security, accessibility, and isolated full-stack checks
+- [x] Contributor guidance documents generated Xcode UI-test verification
+- [x] CORS runtime uses an explicit origin allowlist rather than wildcard patterns
 - [x] Note and activity API boundaries have dedicated MockMvc validation and filter coverage
 - [x] Timeline activity service queries verify their database page bound
+- [x] Google account login verifies ID tokens server-side and links verified identities
+- [x] Users can add and update all supported item types across web, iOS, and API
+- [x] Active timer configuration remains visible and supports editable start time and targets
+- [x] Clockify exports can be pasted into the dashboard and imported into idempotent Know time entries
+- [x] Paths persist a user-selected color from a twelve-color palette
+- [x] Recent dashboard sessions show their path and shortened description
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage

@@ -1,0 +1,1 @@
+The active session, when the session is started, should be able to configurable. The start time should be editable. Path should be editable. Do not hide the configuration buttons when the session is started.
