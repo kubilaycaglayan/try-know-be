@@ -144,4 +144,5 @@
 - [x] User path, item, note, and time-history list queries use bounded pages
 - [x] Frontend development hot reload is reachable on a documented SSH-forwardable port
 - [x] Smoke runs clean its scoped Docker images, Buildx cache, and temporary files without host-wide pruning
+- [x] Native active timer controls synchronize their path, item, and editable start state from the server
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
