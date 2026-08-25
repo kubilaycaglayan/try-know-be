@@ -37,6 +37,8 @@
 - [x] Repository smoke test and backup restore verification
 - [x] Configurable production API origin for the Chrome extension and client auth-expiry handling
 - [x] Completion status transitions preserve progress history and responsive timeline filtering
+- [x] Reducing completed progress reopens the item with a consistent status
+- [x] PostgreSQL smoke coverage verifies completed items reopen and can be completed again
 - [x] Timeline presets for last 7 days, last 30 days, and custom/all-time ranges
 - [x] Web activity timeline note composer with activity ownership validation
 - [x] iOS dashboard statistics synchronized from the canonical API
@@ -72,25 +74,46 @@
 - [x] PostgreSQL smoke coverage exercises combined timeline date and item filters
 - [x] Item listing uses bulk path/tag relationship queries with PostgreSQL smoke coverage
 - [x] Activity search uses bounded database predicates instead of scanning only recent in-memory rows
+- [x] Path, item, note, and activity search sources all apply a database page limit
+- [x] PostgreSQL substring search fields have trigram indexes in a migration
 - [x] User email uniqueness is enforced case-insensitively at the database boundary
 - [x] Public proxy sends CSP and restrictive Permissions-Policy headers
+- [x] Compose monitors the public Caddy proxy with an HTTPS health check
+- [x] Full-stack smoke coverage waits for the public proxy health check
 - [x] Authentication attempts have bounded per-account/IP rate limiting with API coverage
 - [x] Path summaries use scoped/bulk relationship queries without full-user scans
 - [x] Path summary smoke coverage verifies tracked duration without double-counting path/item entries
+- [x] Path summaries exclude time and activity explicitly assigned to a different path
+- [x] Path summary shared-item filters execute at the database query boundary with a bounded page
 - [x] Item membership updates delete only the target item's relationships through a scoped repository query
 - [x] Statistics derive overlapping UTC ranges from one bounded time-entry query
+- [x] Monthly statistics include entries from the entire current UTC month
+- [x] Weekly statistics remain limited to the rolling seven-day window after monthly-range expansion
 - [x] Timeline preset component flow and expanded web accessibility contracts are covered in CI
 - [x] Native API transport retries transient failures and surfaces offline state
 - [x] Native transport avoids replaying non-idempotent mutations during reconnect handling
 - [x] Native AppModel transport injection covers offline refresh error handling
 - [x] Native critical controls expose stable accessibility identifiers for UI-test readiness
+- [x] Native authentication and creation forms expose stable accessibility identifiers
+- [x] Native UI-test source covers the authentication entry flow
+- [x] Accessibility CI verifies the native UI-test source targets stable identifiers
 - [x] Native dashboard timer supports active path and item selection
+- [x] Web and native timer item selectors stay scoped to the selected path
+- [x] Native timer path-selection rule has deterministic unit coverage
+- [x] Backend rejects timer path/item combinations without an owned path membership
+- [x] PostgreSQL smoke coverage rejects unrelated path/item timer targets
 - [x] Extension timer controls re-check canonical server state and preserve API configuration on auth expiry
 - [x] Extension API-provided names are rendered as text-safe select options
 - [x] Backend has no predictable fallback JWT signing secret
 - [x] Backend has no predictable fallback database password
 - [x] Security configuration contract runs in CI for secrets, proxy headers, and extension rendering
+- [x] CORS defaults to the local web origin and requires explicit extension opt-in
+- [x] Production environment template requires an explicit extension origin instead of a wildcard
 - [x] Swift package declares a macOS host platform for CI test/build validation alongside iOS 17
 - [x] API returns a consistent 400 response for malformed route IDs and request bodies
 - [x] MockMvc API coverage includes item validation and timer source/target boundaries
+- [x] Smoke verification cleans its project containers, volumes, and local images automatically
+- [x] Native UI-test launches force a deterministic signed-out authentication screen
+- [x] Note and activity API boundaries have dedicated MockMvc validation and filter coverage
+- [x] Timeline activity service queries verify their database page bound
 - [ ] Broader API/integration, accessibility, performance, and macOS UI test coverage
