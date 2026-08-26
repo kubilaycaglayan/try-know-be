@@ -84,6 +84,7 @@
 - [x] Path summaries use scoped/bulk relationship queries without full-user scans
 - [x] Path summary smoke coverage verifies tracked duration without double-counting path/item entries
 - [x] Path summaries exclude time and activity explicitly assigned to a different path
+- [x] Path lists are ordered by most recent path use when tracked sessions exist
 - [x] Path summary shared-item filters execute at the database query boundary with a bounded page
 - [x] Item membership updates delete only the target item's relationships through a scoped repository query
 - [x] Statistics derive overlapping UTC ranges from one bounded time-entry query
@@ -137,11 +138,13 @@
 - [x] Timeline activity service queries verify their database page bound
 - [x] Google account login verifies ID tokens server-side and links verified identities
 - [x] Users can add and update all supported item types across web, iOS, and API
+- [x] Items persist a source string for links or other origin details
 - [x] Active timer configuration remains visible and supports editable start time and targets
 - [x] Clockify exports can be pasted into the dashboard and imported into idempotent Know time entries
 - [x] Clockify imports are recorded as owned batches that can be listed and undone from the web client
 - [x] Imported Clockify sessions preserve their individual start and end interval history
 - [x] Reports show week, month, and year timelines with path and resource breakdowns
+- [x] Reports include a proper SVG time chart above the day-level detail list
 - [x] Paths persist a user-selected color from a twelve-color palette
 - [x] Path properties, including color, can be edited inline from the web client
 - [x] Path history expands inside the selected path card instead of rendering at the bottom of the page
@@ -151,6 +154,7 @@
 - [x] Smoke runs clean its scoped Docker images, Buildx cache, and temporary files without host-wide pruning
 - [x] Native active timer controls synchronize their path, item, and editable start state from the server
 - [x] Web timer setup can create a new item and attach it to the selected path before starting a session
+- [x] Dashboard session controls are the first dashboard panel and refresh recent entries after session changes
 - [x] Dashboard statistics expose rolling-week time breakdowns by path and item
 - [x] Native dashboard decodes and displays rolling-week path and item statistics
 - [x] Statistics clip sessions crossing UTC reporting boundaries without double-counting
