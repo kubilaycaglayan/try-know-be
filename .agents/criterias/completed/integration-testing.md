@@ -43,3 +43,4 @@ Remaining weak evidence:
 - 2200f30 Format backend Java sources
 - b4ca6a0 Add readability coverage for clean code criterion
 - fe089ac Complete integration testing criterion
+- 7138fbf Record integration testing proof commits
