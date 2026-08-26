@@ -144,6 +144,7 @@
 - [x] Reports show week, month, and year timelines with path and resource breakdowns
 - [x] Paths persist a user-selected color from a twelve-color palette
 - [x] Path properties, including color, can be edited inline from the web client
+- [x] Path history expands inside the selected path card instead of rendering at the bottom of the page
 - [x] Recent dashboard sessions show their path and shortened description
 - [x] User path, item, note, and time-history list queries use bounded pages
 - [x] Frontend development hot reload is reachable on a documented SSH-forwardable port
