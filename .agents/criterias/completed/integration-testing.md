@@ -29,3 +29,17 @@ Completed criteria with current integration-style evidence:
 Remaining weak evidence:
 
 - None identified in the current audit.
+
+## Proof
+
+- afeac1b Add backend integration coverage for completed criteria
+- 48b7838 Make Google auth security check quote agnostic
+- 5de5f61 Make activity filtering portable for smoke tests
+- 6f56664 Cover Google credential sign-in flow
+- 0fb1954 Assert hot reload development contract
+- 30eed18 Cover legacy Clockify batch backfill in smoke
+- 791e649 Cover dashboard timer stop refresh
+- 36b4f83 Cover report year period selection
+- 2200f30 Format backend Java sources
+- b4ca6a0 Add readability coverage for clean code criterion
+- fe089ac Complete integration testing criterion
