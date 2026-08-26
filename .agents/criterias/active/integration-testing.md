@@ -8,6 +8,7 @@ Completed criteria with current integration-style evidence:
 - addable-item-types: backend integration and smoke create/update supported item types; ItemsView test verifies type options and submit payload.
 - bug-import-batches: smoke applies V1-V9 migrations to a temporary PostgreSQL database, seeds legacy imported rows, runs V10, and verifies batches, entries, and activities are linked.
 - bug-imported-clockify-sessions-repeating-time: backend integration imports multiple entries with distinct intervals and verifies time-entry history durations; smoke imports and undoes Clockify entries.
+- clean-code-principles: repo readability audit verifies Java, web, extension, script, and Swift source files avoid very long compressed lines; backend Java, extension scripts, smoke, and iOS sources have been reformatted to satisfy the gate.
 - cleanup-after-smoke: cleanup contract checks scoped Compose, image, Buildx, and temp backup cleanup; smoke exercises the cleanup trap.
 - editable-paths: backend integration updates path name, description, and color; PathsView test verifies inline edit payload.
 - feature-item: DashboardView test creates a new item from the session flow, reloads items, and selects the new item.
@@ -27,4 +28,4 @@ Completed criteria with current integration-style evidence:
 
 Remaining weak evidence:
 
-- clean-code-principles: current source still contains many very long compressed lines across backend, extension, scripts, and iOS files, so a strict readability/check-format integration gate would currently fail. This criterion needs either formatting work or a scoped automated readability check before the active integration-testing criterion can be honestly completed.
+- None identified in the current audit.
