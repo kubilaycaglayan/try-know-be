@@ -49,7 +49,15 @@ When accessing from a remote computer:
 
 ## 4. Frontend Hot-Reload Development (Alternative)
 
-To run the Vue frontend with Vite dev server:
+To run the Vue frontend with Vite dev server behind the local proxy:
+
+```bash
+./scripts/run.sh
+```
+
+Vite runs inside the `web` service, Caddy exposes it at `http://localhost:3000`, and changes to files under `frontend/` hot reload in that browser tab.
+
+To run standalone Vite without the proxy:
 
 ```bash
 # 1. Run database and backend only
@@ -58,7 +66,7 @@ JWT_SECRET='dev-secret-32-chars' POSTGRES_PASSWORD='dev-password' docker compose
 # 2. Start Vite dev server on the memorable hot-reload port 5177
 (cd frontend && npm install && npm run dev)
 
-Vite binds to `0.0.0.0:5177`, prints `http://localhost:5177` when it starts, and proxies `/api` to the API’s loopback development port 8080. From another machine, use `ssh -L 5177:localhost:5177 user@<host-ip>` and open `http://localhost:5177`.
+Vite binds to `0.0.0.0:5177`, prints `http://localhost:5177` when it starts, and proxies `/api` to the API’s loopback development port 8080. From another machine, use `ssh -L 3000:localhost:3000 user@<host-ip>` for the proxied stack or `ssh -L 5177:localhost:5177 user@<host-ip>` for standalone Vite.
 ```
 
 ## 5. Teardown & Management
