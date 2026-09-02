@@ -140,7 +140,7 @@
 - [x] Users can add and update all supported item types across web, iOS, and API
 - [x] Items persist a source string for links or other origin details
 - [x] Active timer configuration remains visible and supports editable start time and targets
-- [x] Clockify exports can be pasted into the dashboard and imported into idempotent Know time entries
+- [x] Clockify exports can be pasted into the dashboard and imported into idempotent Knowledge Base time entries
 - [x] Clockify imports are recorded as owned batches that can be listed and undone from the web client
 - [x] Imported Clockify sessions preserve their individual start and end interval history
 - [x] Reports show week, month, and year timelines with path and resource breakdowns
